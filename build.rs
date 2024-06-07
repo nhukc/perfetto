@@ -28,6 +28,7 @@ fn main() {
     // Change to the Perfetto directory.
     let perfetto_dir = target_dir.clone();
 
+    // TODO: This command fails sometimes. Retry a few times before giving up.
     // Run tools/install-build-deps.
     let status = Command::new("bash")
         .arg("-c")
